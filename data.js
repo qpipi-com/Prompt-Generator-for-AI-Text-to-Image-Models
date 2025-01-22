@@ -9,10 +9,10 @@ const data = {
 	"CGI渲染图 CGI RENDERINGS": ["3D Render", "Corona Render", "Creature Design", "Cycles Render", "Detailed Render", "Environment Design", "Intricate Environment", "LSD Render", "Octane Render", "PBR", "Glass Caustics", "Global Illumination", "Subsurface Scattering"],
 	"CGI软件 CGI SOFTWARES": ["3D Model", "3D Sculpt", "3Ds Max Model", "Blender Model", "Cinema4d Model", "Maya Model", "Unreal Engine", "Zbrush Sculpt"],
 	"摄影 CAMERAS": ["Aerial View", "Canon50", "Cinematic", "Close-up", "Color Grading", "Dramatic", "Film Grain", "Fisheye Lens", "Glamor Shot", "Golden Hour", "HD", "Landscape", "Lens Flare", "Macro", "Polaroid", "Photoshoot", "Portrait", "Studio Lighting", "Vintage", "War Photography", "White Balance", "Wildlife Photography"],
-	"CARVINGS AND ETCHINGS": ["etching", "Linocut", "Paper Model", "Paper-Mache", "Papercutting", "Pyrography", "Wood-Carving"],
-	"COLORS": ["Beautiful Lighting", "Cold Color Palette", "Colorful", "Dynamic Lighting", "Electric Colors", "Infrared", "Pastel", "Neon", "Synthwave", "Warm Color Palette"],
-	"DRAWING STYLES": ["Cel Shading", "Children's Drawing", "Crosshatch", "Detailed and Intricate", "Doodle", "Dot Art", "Line Art", "Sketch"],
-	"EMOTIONS": ["Angry", "Bitter", "Disgusted", "Embarrassed", "Evil", "Excited", "Fear", "Funny", "Happy", "Horrifying", "Lonely", "Sad", "Serene", "Surprised", "Melancholic"],
-	"PENS": ["Chalk", "Colored Pencil", "Graphite", "Ink", "Oil Paint", "Pastel Art"],
-	"VISUAL STYLES": ["2D", "8-Bit", "16-Bit", "Anaglyph", "Anime", "Art Nouveau", "Bauhaus", "Baroque", "CGI", "Cartoon", "Comic Book", "Concept Art", "Constructivist", "Cubist", "Digital Art", "Dadaist", "Expressionist", "Fantasy", "Fauvist", "Figurative", "Graphic Novel", "Geometric", "Hard Edge Painting", "Hydrodipped", "Impressionistic", "Lithography", "Manga", "Minimalist", "Modern Art", "Mosaic", "Mural", "Naive", "Neoclassical", "Photo", "Realistic", "Rococo", "Romantic", "Street Art", "Symbolist", "Stuckist", "Surrealist", "Visual Novel", "Watercolor"]
+	"雕刻和蚀刻 CARVINGS AND ETCHINGS": ["etching", "Linocut", "Paper Model", "Paper-Mache", "Papercutting", "Pyrography", "Wood-Carving"],
+	"色彩 COLORS": ["Beautiful Lighting", "Cold Color Palette", "Colorful", "Dynamic Lighting", "Electric Colors", "Infrared", "Pastel", "Neon", "Synthwave", "Warm Color Palette"],
+	"绘图样式 DRAWING STYLES": ["Cel Shading", "Children's Drawing", "Crosshatch", "Detailed and Intricate", "Doodle", "Dot Art", "Line Art", "Sketch"],
+	"情绪 EMOTIONS": ["Angry", "Bitter", "Disgusted", "Embarrassed", "Evil", "Excited", "Fear", "Funny", "Happy", "Horrifying", "Lonely", "Sad", "Serene", "Surprised", "Melancholic"],
+	"画笔 PENS": ["Chalk", "Colored Pencil", "Graphite", "Ink", "Oil Paint", "Pastel Art"],
+	"视觉样式 VISUAL STYLES": ["2D", "8-Bit", "16-Bit", "Anaglyph", "Anime", "Art Nouveau", "Bauhaus", "Baroque", "CGI", "Cartoon", "Comic Book", "Concept Art", "Constructivist", "Cubist", "Digital Art", "Dadaist", "Expressionist", "Fantasy", "Fauvist", "Figurative", "Graphic Novel", "Geometric", "Hard Edge Painting", "Hydrodipped", "Impressionistic", "Lithography", "Manga", "Minimalist", "Modern Art", "Mosaic", "Mural", "Naive", "Neoclassical", "Photo", "Realistic", "Rococo", "Romantic", "Street Art", "Symbolist", "Stuckist", "Surrealist", "Visual Novel", "Watercolor"]
 };
