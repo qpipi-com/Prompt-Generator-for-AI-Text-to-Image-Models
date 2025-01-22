@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="一个通用且易于使用的工具，旨在为AI图像生成软件生成有趣的随机自定义提示，对测试模型非常有用。适用于稳定扩散、Midjourney和Dall-E 2。只需点击几下，即可快速轻松地创建提示。">
+  <meta name="description" content="一个通用且易于使用的工具，旨在为AI图像生成软件制作有趣的随机自定义提示，对测试模型非常有用。适用于Stable Diffusion、Midjourney和Dall-E 2。只需点击几下，即可快速轻松地创建提示。">
   <meta name="keywords" content="prompt generator, AI, image generation, text2img, img2img, prompts, random prompts, prompt generation, AI model, AI model tester, Easy Diffusion, Automatic1111, Civitai, Hugging Face, Stable Diffusion, Midjourney, Dall-E 2">
-  <title>提示生成器_Qpipi</title>
+  <title>AI绘画提示生成器_Qpipi</title>
   <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -42,12 +42,12 @@
           <input type="number" id="numWords" min="0" max="1000" value="50"
             title="Sets Number of Random Words to be Drawn from Database.">
           <button id="randomizeBtn" class="btn button randomize-btn"
-            title="Pull a Set Number of Random Words from Database. Shift + Alt + W">随机化</button>
-          <label class="bold-label" for="numPrompts">提示次数：</label>
+            title="Pull a Set Number of Random Words from Database. Shift + Alt + W">类别随机提示填充</button>
+          <label class="bold-label" for="numPrompts">最终提示条数：</label>
           <input type="number" id="numPrompts" value="10" min="0" max="1000" class="w-16"
             title="Sets Number of Prompts to be Generated.">
           <button id="generateBtn" class="btn button generate-button soft-ui-button"
-            title="Randomly Generate Prompts from Categories. Shift + Alt + G">生成</button>
+            title="Randomly Generate Prompts from Categories. Shift + Alt + G">类别提示随机最终生成</button>
           <button id="undoRemoveButton" class="btn button undoRemove-btn"
             title="Recover a Deleted Category. Shift + Alt + E">撤消删除类别</button>
           <button id="add-all-template-btn" class="btn button add-all-template-btn"
@@ -92,7 +92,7 @@
         <div id="buttonsContainer">
           <a href="https://www.qpipi.com" target="_blank" class="btn button kofi-btn"
             title="Support me on Ko-fi">Qpipi.com</a>
-          <a href="https://github.com/SpriteSixis/Prompt-Generator-for-AI-Text-to-Image-Models" target="_blank"
+          <a href="#" target="_blank"
             class="btn button github-btn" title="Read the User Manual on GitHub">用户指南</a>
           <button id="spellcheckToggleBtn" class="btn button spellchk-btn" title="Toggle Spellcheck ON/OFF. Shift + Alt + 7">拼写检查</button>
           <button id="undoRemoveAllButton" class="btn button undoRemoveAll-btn"
