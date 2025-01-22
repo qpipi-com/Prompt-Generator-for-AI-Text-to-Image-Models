@@ -139,7 +139,7 @@ function createCategoryComponent(categoryName) {
   numberContainer.classList.add('option-container');
 
   const numberLabel = document.createElement('label');
-  numberLabel.textContent = ' 字数：'; // Added space for clarity
+  numberLabel.textContent = ' 词汇数：'; // Added space for clarity
   numberLabel.style.textTransform = 'none'; // Remove text-transform inline
   numberLabel.style.fontWeight = 'bold'; // Remove font-weight inline
 
@@ -149,7 +149,7 @@ function createCategoryComponent(categoryName) {
   numberInput.setAttribute('max', '500');
   numberInput.classList.add('w-16', 'ml-2');
   numberInput.value = 1;  // Set the initial value to '0'
-  numberInput.title = '生成提示所需绘制的字数'
+  numberInput.title = '本类别生成最终提示所提供的词汇数量'
 
   numberInput.addEventListener('input', () => {
     if (numberInput.value > 500) {
