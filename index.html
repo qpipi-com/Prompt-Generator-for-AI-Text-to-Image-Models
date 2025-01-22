@@ -23,9 +23,9 @@
           <button id="addCategoryBtn" class="btn button btn-primary ml-2"
             title="Create Category Container. Shift + Alt + N">创建新类别</button>
           <button id="clearAllBtn" class="btn button btn-danger ml-2"
-            title="Clear All Textboxes and History. Shift + Alt + C">清空全部类别词汇</button>
+            title="Clear All Textboxes and History. Shift + Alt + C">删除全部提示词汇</button>
           <button id="undoClearAllButton" class="btn button undoclearAll-btn"
-            title="Keyboard Shortcut: Shift + Alt + Q">撤消类别词汇清空</button>
+            title="Keyboard Shortcut: Shift + Alt + Q">撤消删除提示词汇</button>
           <button id="saveCustomPromptsBtn" class="btn button btn-info ml-2"
             title="Save Custom Layout to File. Shift + Alt + S">保存自定义提示</button>
           <button id="loadCustomPromptsBtn" class="btn button btn-success ml-2"
@@ -53,7 +53,7 @@
           <button id="add-all-template-btn" class="btn button add-all-template-btn"
             title="Adds All Included Categories to Template. Shift + Alt + A">全部添加到模板</button>
           <button id="restoreDefaultLayoutBtn" class="btn button Default-btn"
-            title="Restore the Default Layout. Shift + Alt + D">恢复默认值</button>
+            title="Restore the Default Layout. Shift + Alt + D">恢复类别默认值</button>
           <button id="advancedButton" class="btn button Advanced-btn"
             title="Adds the Usual Stable Diffusion Image Modifiers in More Containers. Shift + Alt + 4">高级类别布局</button>
         </div>
@@ -69,15 +69,15 @@
         <div class="mt-4">
           <label class="bold-label" for="promptTemplate">自定义提示模板：</label>
           <textarea id="promptTemplate" rows="4" spellcheck="true"
-            placeholder="[SUBJECTS], wearing [CLOTHING], with [PROPS], in a beautiful [SETTINGS], [SCENE]"
-            title="Write whatever structure you wish with the [CATEGORY NAME] in square brackets. Case insensitive, so don't worry. If a [CATEGORY] is missing in the template, it will not be included in the generated prompt."
+            placeholder="[主题 SUBJECTS], wearing [服装 CLOTHING], with [道具 PROPS], in a beautiful [环境 SETTINGS], [景色 SCENE]"
+            title="Write whatever structure you wish with the [类别名称 CATEGORY NAME] in square brackets. Case insensitive, so don't worry. If a [类别 CATEGORY] is missing in the template, it will not be included in the generated prompt."
             class="w-full soft-ui-input"></textarea>
           <ul class="text-sm text-gray-400 mt-1">
-            <li>提醒：确保模板中的 [CATEGORY] 名称与类别部分中的名称匹配 （例如，[SUBJECTS] 而不是 [SUBJECT]）。
+            <li>提醒：确保模板中的 [类别 CATEGORY] 名称与类别部分中的名称匹配 （例如，[主题 SUBJECTS] 而不是 [SUBJECT]）。
             </li>
-            <li>不要忘记检查您的“包含”滑块，如果它们被停用，[CATEGORY] 将不会出现在 提示，即使它写在 Template 中。</li>
-            <li>最后，不要忘记检查 [CATEGORY] 容器中的 Number of Words 是否位于 至少 1。</li>
-            <li>对于简单的随机单词输出，请保留 Custom Prompt Template （自定义提示模板） 空。这将从您选择的类别中生成一个随机单词列表，没有任何特定的 句 结构。单词将按照类别从上到下的顺序生成。</li>
+            <li>不要忘记检查您的“包含”滑块，如果它们被关闭，[类别 CATEGORY] 将不会出现在 提示，即使它写在 Template 中。</li>
+            <li>最后，不要忘记检查 [类别 CATEGORY] 容器中的 词汇数 是否大于或等于 1 。</li>
+            <li>对于简单的随机单词输出，请保留 Custom Prompt Template （自定义提示模板） 空。这将从您选择的类别中生成一个随机单词列表，没有任何特定的 语句 结构。单词将按照类别从上到下的顺序生成。</li>
           </ul>
         </div>
         <!-- Generated prompts section -->
@@ -100,7 +100,7 @@
           <button id="clearHistoryBtn" class="btn button btn-warning"
             title="Empty History Container: Shift + Alt + H">清除历史记录</button>
           <button id="removeAllBtn" class="btn button remove-all-btn"
-            title="Delete All Categories. Shift + Alt + Y">删除全部</button>
+            title="Delete All Categories. Shift + Alt + Y">删除全部类别</button>
         </div>
         <div id="footer">
           <p>
