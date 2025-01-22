@@ -86,7 +86,7 @@ function createCategoryComponent(categoryName) {
   includeLabel.appendChild(includeCheckbox);
   includeLabel.appendChild(slider);
 
-  const includeText = document.createTextNode(' Include');  // Added space for clarity
+  const includeText = document.createTextNode(' 包含');  // Added space for clarity
   includeContainer.appendChild(includeLabel);
   includeContainer.appendChild(includeText);
 
@@ -123,12 +123,12 @@ function createCategoryComponent(categoryName) {
 
   const lockSlider = document.createElement('div');
   lockSlider.classList.add('slider');
-  lockSlider.title = 'Lock Text Area to Prevent Modification. Shift + Alt + K'; // Set the title attribute
+  lockSlider.title = '锁定文本区域以防止修改。 Shift + Alt + K'; // Set the title attribute
 
   lockLabel.appendChild(lockCheckbox);
   lockLabel.appendChild(lockSlider);
 
-  const lockText = document.createTextNode(' Lock'); // Added space for clarity
+  const lockText = document.createTextNode(' 锁定'); // Added space for clarity
   lockContainer.appendChild(lockLabel);
   lockContainer.appendChild(lockText);
 
@@ -139,7 +139,7 @@ function createCategoryComponent(categoryName) {
   numberContainer.classList.add('option-container');
 
   const numberLabel = document.createElement('label');
-  numberLabel.textContent = ' Number of Words:'; // Added space for clarity
+  numberLabel.textContent = ' 字数：'; // Added space for clarity
   numberLabel.style.textTransform = 'none'; // Remove text-transform inline
   numberLabel.style.fontWeight = 'bold'; // Remove font-weight inline
 
@@ -149,7 +149,7 @@ function createCategoryComponent(categoryName) {
   numberInput.setAttribute('max', '500');
   numberInput.classList.add('w-16', 'ml-2');
   numberInput.value = 1;  // Set the initial value to '0'
-  numberInput.title = 'Number of Words to be Drawn for the Generation of the Prompt'
+  numberInput.title = '生成提示所需绘制的字数'
 
   numberInput.addEventListener('input', () => {
     if (numberInput.value > 500) {
@@ -175,7 +175,7 @@ function createCategoryComponent(categoryName) {
 
   // Add the duplicate button
   const duplicateButton = document.createElement('button');
-  duplicateButton.textContent = 'Duplicate';
+  duplicateButton.textContent = '复制本栏目';
   duplicateButton.classList.add('button', 'duplicate-btn'); // Set a class for the button
   duplicateButton.title = 'Duplicate Category Container. Shift + Alt + B'; // Set the title attribute
   duplicateButton.onclick = () => {
@@ -186,7 +186,7 @@ function createCategoryComponent(categoryName) {
 
   // Add to template button
   const addToTemplateButton = document.createElement('button');
-  addToTemplateButton.textContent = 'Add to Template';
+  addToTemplateButton.textContent = '添加到模板';
   addToTemplateButton.classList.add('button', 'add-template-btn');
   addToTemplateButton.title = 'Add this category to the template. Shift + Alt + T'; // Set the title attribute
   addToTemplateButton.onclick = () => {
@@ -221,7 +221,7 @@ function createCategoryComponent(categoryName) {
 
   // Put the remove button inside the optionContainer
   const removeButton = document.createElement('button');
-  removeButton.textContent = 'Delete Category';
+  removeButton.textContent = '删除本栏目';
   removeButton.classList.add('button', 'remove-btn'); // Use 'button' class instead of 'soft-ui-button'
   removeButton.title = 'Delete Category Container. Shift + Alt + X'; // Set the title attribute
   removeButton.onclick = () => {
