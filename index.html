@@ -21,11 +21,11 @@
       <div class="button-section">
         <div class="button-group mt-4">
           <button id="addCategoryBtn" class="btn button btn-primary ml-2"
-            title="Create Category Container. Shift + Alt + N">新建类别</button>
+            title="Create Category Container. Shift + Alt + N">创建新类别</button>
           <button id="clearAllBtn" class="btn button btn-danger ml-2"
-            title="Clear All Textboxes and History. Shift + Alt + C">清除全部</button>
+            title="Clear All Textboxes and History. Shift + Alt + C">清空全部类别词汇</button>
           <button id="undoClearAllButton" class="btn button undoclearAll-btn"
-            title="Keyboard Shortcut: Shift + Alt + Q">撤消全部清除</button>
+            title="Keyboard Shortcut: Shift + Alt + Q">撤消类别词汇清空</button>
           <button id="saveCustomPromptsBtn" class="btn button btn-info ml-2"
             title="Save Custom Layout to File. Shift + Alt + S">保存自定义提示</button>
           <button id="loadCustomPromptsBtn" class="btn button btn-success ml-2"
@@ -33,21 +33,21 @@
           <button id="addPromptsButton" class="btn button btn-success ml-2"
             title="Add Custom Prompts to Existing Layout from File. Shift + Alt + 2">添加自定义提示</button>
           <button id="saveAllBtn" class="btn button btn-primary ml-2"
-            title="Save Current Layout to Local Storage. Shift + Alt + M">全部保存</button>
+            title="Save Current Layout to Local Storage. Shift + Alt + M">保存当前布局</button>
           <button id="IncludeAllBtn" class="btn button includeAll-btn"
-            title="Toggle Include Checkbox in All Categories. Shift + Alt + P">包括所有</button>
+            title="Toggle Include Checkbox in All Categories. Shift + Alt + P">所有类别包含开关</button>
           <button id="lockAllBtn" class="btn button lockAll-btn"
-            title="Toggle Lock Checkbox in All Categories. Shift + Alt + L">全部锁定</button>
-          <label class="bold-label" for="numWords">随机单词数：</label>
+            title="Toggle Lock Checkbox in All Categories. Shift + Alt + L">所有类别锁定开关</button>
+          <label class="bold-label" for="numWords">随机词汇数：</label>
           <input type="number" id="numWords" min="0" max="1000" value="50"
             title="Sets Number of Random Words to be Drawn from Database.">
           <button id="randomizeBtn" class="btn button randomize-btn"
-            title="Pull a Set Number of Random Words from Database. Shift + Alt + W">类别随机提示填充</button>
+            title="Pull a Set Number of Random Words from Database. Shift + Alt + W">随机提示填充类别</button>
           <label class="bold-label" for="numPrompts">最终提示条数：</label>
           <input type="number" id="numPrompts" value="10" min="0" max="1000" class="w-16"
             title="Sets Number of Prompts to be Generated.">
           <button id="generateBtn" class="btn button generate-button soft-ui-button"
-            title="Randomly Generate Prompts from Categories. Shift + Alt + G">类别提示随机最终生成</button>
+            title="Randomly Generate Prompts from Categories. Shift + Alt + G">类别随机提示最终生成</button>
           <button id="undoRemoveButton" class="btn button undoRemove-btn"
             title="Recover a Deleted Category. Shift + Alt + E">撤消删除类别</button>
           <button id="add-all-template-btn" class="btn button add-all-template-btn"
@@ -55,7 +55,7 @@
           <button id="restoreDefaultLayoutBtn" class="btn button Default-btn"
             title="Restore the Default Layout. Shift + Alt + D">恢复默认值</button>
           <button id="advancedButton" class="btn button Advanced-btn"
-            title="Adds the Usual Stable Diffusion Image Modifiers in More Containers. Shift + Alt + 4">高级布局</button>
+            title="Adds the Usual Stable Diffusion Image Modifiers in More Containers. Shift + Alt + 4">高级类别布局</button>
         </div>
       </div>
 
@@ -91,9 +91,9 @@
         <!-- Button Container -->
         <div id="buttonsContainer">
           <a href="https://www.qpipi.com" target="_blank" class="btn button kofi-btn"
-            title="Support me on Ko-fi">Qpipi.com</a>
+            title="Support me on Qpipi.com">Qpipi.com</a>
           <a href="#" target="_blank"
-            class="btn button github-btn" title="Read the User Manual on GitHub">用户指南</a>
+            class="btn button github-btn" title="Read the User Manual on Qpipi.com">用户指南</a>
           <button id="spellcheckToggleBtn" class="btn button spellchk-btn" title="Toggle Spellcheck ON/OFF. Shift + Alt + 7">拼写检查</button>
           <button id="undoRemoveAllButton" class="btn button undoRemoveAll-btn"
             title="Recover all Deleted Categories. Shift + Alt + 5">撤消全部删除</button>
