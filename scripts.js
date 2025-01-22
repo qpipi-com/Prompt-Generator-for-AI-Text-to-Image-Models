@@ -7,8 +7,8 @@ let duplicateCounters = {};
 const templateTextArea = document.getElementById('promptTemplate');
 
 // Define an array of category names to be used in the application
-const categoryNames = ['主题', '服装', '道具', '姿势', '环境', '景色'];
-const advancedCategoryNames = ["艺术家", "CGI渲染图", "CGI软件", "摄影", "雕刻和蚀刻", "色彩", "绘图样式", "情绪", "画笔", "视觉样式"];
+const categoryNames = ['主题 SUBJECTS', '服装 CLOTHING', '道具 PROPS', '姿势 POSES', '环境 SETTINGS', '景色 SCENE'];
+const advancedCategoryNames = ["艺术家 ARTISTS", "CGI渲染图 CGI RENDERINGS", "CGI软件 CGI SOFTWARES", "摄影 CAMERAS", "雕刻和蚀刻 CARVINGS AND ETCHINGS", "色彩 COLORS", "绘图样式 DRAWING STYLES", "情绪 EMOTIONS", "画笔 PENS", "视觉样式 VISUAL STYLES"];
 
 let categoryIdCounter = 0;
 
@@ -175,7 +175,7 @@ function createCategoryComponent(categoryName) {
 
   // Add the duplicate button
   const duplicateButton = document.createElement('button');
-  duplicateButton.textContent = '复制本栏目';
+  duplicateButton.textContent = '复制本类别';
   duplicateButton.classList.add('button', 'duplicate-btn'); // Set a class for the button
   duplicateButton.title = 'Duplicate Category Container. Shift + Alt + B'; // Set the title attribute
   duplicateButton.onclick = () => {
@@ -221,7 +221,7 @@ function createCategoryComponent(categoryName) {
 
   // Put the remove button inside the optionContainer
   const removeButton = document.createElement('button');
-  removeButton.textContent = '删除本栏目';
+  removeButton.textContent = '删除本类别';
   removeButton.classList.add('button', 'remove-btn'); // Use 'button' class instead of 'soft-ui-button'
   removeButton.title = 'Delete Category Container. Shift + Alt + X'; // Set the title attribute
   removeButton.onclick = () => {
