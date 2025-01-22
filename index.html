@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A versatile and easy-to-use tool designed to generate interesting random custom prompts for AI image generation software, very useful for testing models. Works for Stable Diffusion, Midjourney, and Dall-E 2. Create prompts quickly and easily with just a few clicks.">
   <meta name="keywords" content="prompt generator, AI, image generation, text2img, img2img, prompts, random prompts, prompt generation, AI model, AI model tester, Easy Diffusion, Automatic1111, Civitai, Hugging Face, Stable Diffusion, Midjourney, Dall-E 2">
-  <title>Prompt Generator</title>
+  <title>提示生成器_Qpipi</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,46 +32,41 @@
       <div class="button-section">
         <div class="button-group mt-4">
           <button id="addCategoryBtn" class="btn button btn-primary ml-2"
-            title="Create Category Container. Shift + Alt + N">New
-            Category</button>
+            title="Create Category Container. Shift + Alt + N">新建类别</button>
           <button id="clearAllBtn" class="btn button btn-danger ml-2"
-            title="Clear All Textboxes and History. Shift + Alt + C">Clear
-            All</button>
+            title="Clear All Textboxes and History. Shift + Alt + C">清除全部</button>
           <button id="undoClearAllButton" class="btn button undoclearAll-btn"
-            title="Keyboard Shortcut: Shift + Alt + Q">Undo Clear All</button>
+            title="Keyboard Shortcut: Shift + Alt + Q">撤消全部清除</button>
           <button id="saveCustomPromptsBtn" class="btn button btn-info ml-2"
-            title="Save Custom Layout to File. Shift + Alt + S">Save Custom Prompts</button>
+            title="Save Custom Layout to File. Shift + Alt + S">保存自定义提示</button>
           <button id="loadCustomPromptsBtn" class="btn button btn-success ml-2"
-            title="Load Custom Layout from File. Shift + Alt + O">Load Custom Prompts</button>
+            title="Load Custom Layout from File. Shift + Alt + O">加载自定义提示</button>
           <button id="addPromptsButton" class="btn button btn-success ml-2"
-            title="Add Custom Prompts to Existing Layout from File. Shift + Alt + 2">Add Custom Prompts</button>
+            title="Add Custom Prompts to Existing Layout from File. Shift + Alt + 2">添加自定义提示</button>
           <button id="saveAllBtn" class="btn button btn-primary ml-2"
-            title="Save Current Layout to Local Storage. Shift + Alt + M">Save
-            All</button>
+            title="Save Current Layout to Local Storage. Shift + Alt + M">全部保存</button>
           <button id="IncludeAllBtn" class="btn button includeAll-btn"
-            title="Toggle Include Checkbox in All Categories. Shift + Alt + P">Include All</button>
+            title="Toggle Include Checkbox in All Categories. Shift + Alt + P">包括所有</button>
           <button id="lockAllBtn" class="btn button lockAll-btn"
-            title="Toggle Lock Checkbox in All Categories. Shift + Alt + L">Lock
-            All</button>
-          <label class="bold-label" for="numWords">Number of Random Words:</label>
+            title="Toggle Lock Checkbox in All Categories. Shift + Alt + L">全部锁定</button>
+          <label class="bold-label" for="numWords">随机单词数：</label>
           <input type="number" id="numWords" min="0" max="1000" value="50"
             title="Sets Number of Random Words to be Drawn from Database.">
           <button id="randomizeBtn" class="btn button randomize-btn"
-            title="Pull a Set Number of Random Words from Database. Shift + Alt + W">Randomize</button>
-          <label class="bold-label" for="numPrompts">Number of prompts:</label>
+            title="Pull a Set Number of Random Words from Database. Shift + Alt + W">随机化</button>
+          <label class="bold-label" for="numPrompts">提示次数：</label>
           <input type="number" id="numPrompts" value="10" min="0" max="1000" class="w-16"
             title="Sets Number of Prompts to be Generated.">
           <button id="generateBtn" class="btn button generate-button soft-ui-button"
-            title="Randomly Generate Prompts from Categories. Shift + Alt + G">Generate</button>
+            title="Randomly Generate Prompts from Categories. Shift + Alt + G">生成</button>
           <button id="undoRemoveButton" class="btn button undoRemove-btn"
-            title="Recover a Deleted Category. Shift + Alt + E">Undo Delete Category</button>
+            title="Recover a Deleted Category. Shift + Alt + E">撤消删除类别</button>
           <button id="add-all-template-btn" class="btn button add-all-template-btn"
-            title="Adds All Included Categories to Template. Shift + Alt + A">Add All to Template</button>
+            title="Adds All Included Categories to Template. Shift + Alt + A">全部添加到模板</button>
           <button id="restoreDefaultLayoutBtn" class="btn button Default-btn"
-            title="Restore the Default Layout. Shift + Alt + D">Restore Default</button>
+            title="Restore the Default Layout. Shift + Alt + D">恢复默认值</button>
           <button id="advancedButton" class="btn button Advanced-btn"
-            title="Adds the Usual Stable Diffusion Image Modifiers in More Containers. Shift + Alt + 4">Advanced
-            Layout</button>
+            title="Adds the Usual Stable Diffusion Image Modifiers in More Containers. Shift + Alt + 4">高级布局</button>
         </div>
       </div>
 
@@ -83,7 +78,7 @@
         </div>
         <!-- Prompt generation section -->
         <div class="mt-4">
-          <label class="bold-label" for="promptTemplate">Custom Prompt Template:</label>
+          <label class="bold-label" for="promptTemplate">自定义提示模板：</label>
           <textarea id="promptTemplate" rows="4" spellcheck="true"
             placeholder="[SUBJECTS], wearing [CLOTHING], with [PROPS], in a beautiful [SETTINGS], [SCENE]"
             title="Write whatever structure you wish with the [CATEGORY NAME] in square brackets. Case insensitive, so don't worry. If a [CATEGORY] is missing in the template, it will not be included in the generated prompt."
