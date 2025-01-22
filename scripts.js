@@ -7,8 +7,8 @@ let duplicateCounters = {};
 const templateTextArea = document.getElementById('promptTemplate');
 
 // Define an array of category names to be used in the application
-const categoryNames = ['SUBJECTS', 'CLOTHING', 'PROPS', 'POSES', 'SETTINGS', 'SCENE'];
-const advancedCategoryNames = ["ARTISTS", "CGI RENDERINGS", "CGI SOFTWARES", "CAMERAS", "CARVINGS AND ETCHINGS", "COLORS", "DRAWING STYLES", "EMOTIONS", "PENS", "VISUAL STYLES"];
+const categoryNames = ['主题', '服装', '道具', '姿势', '环境', '景色'];
+const advancedCategoryNames = ["艺术家", "CGI渲染图", "CGI软件", "摄影", "雕刻和蚀刻", "色彩", "绘图样式", "情绪", "画笔", "视觉样式"];
 
 let categoryIdCounter = 0;
 
