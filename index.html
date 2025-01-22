@@ -15,7 +15,7 @@
 
 <body class="bg-gray-900 text-white min-h-screen">
   <div class="container mx-auto px-1">
-    <h1 class="text-4xl font-bold text-right my-6">PrOMpt GenERator</h1>
+    <h1 class="text-4xl font-bold text-right my-6">QpiPi PrOMpt GenERator</h1>
     <div class="main-content-wrapper">
       <!-- Button section -->
       <div class="button-section">
@@ -73,19 +73,11 @@
             title="Write whatever structure you wish with the [CATEGORY NAME] in square brackets. Case insensitive, so don't worry. If a [CATEGORY] is missing in the template, it will not be included in the generated prompt."
             class="w-full soft-ui-input"></textarea>
           <ul class="text-sm text-gray-400 mt-1">
-            <li>Reminder: Ensure the <b>[CATEGORY]</b> names in the template match the ones in the categories section
-              (e.g.
-              <b>[SUBJECTS]</b> instead of <b>[SUBJECT]</b>).
+            <li>提醒：确保模板中的 [CATEGORY] 名称与类别部分中的名称匹配 （例如，[SUBJECTS] 而不是 [SUBJECT]）。
             </li>
-            <li>Don't forget to check your <b>'Include'</b> sliders, if they are deactivated, the <b>[CATEGORY]</b>
-              won't appear in
-              the prompt, even if it is written in the Template.</li>
-            <li>Finally, don't forget to check that the <b>Number of Words</b> in your <b>[CATEGORY]</b> container is at
-              least 1.</li>
-            <li>For a simple randomized words output, leave the Custom Prompt Template
-              empty. This will generate a list of random words from your selected categories without any specific
-              sentence
-              structure. The words will be generated in the order of the categories from top to bottom.</li>
+            <li>不要忘记检查您的“包含”滑块，如果它们被停用，[CATEGORY] 将不会出现在 提示，即使它写在 Template 中。</li>
+            <li>最后，不要忘记检查 [CATEGORY] 容器中的 Number of Words 是否位于 至少 1。</li>
+            <li>对于简单的随机单词输出，请保留 Custom Prompt Template （自定义提示模板） 空。这将从您选择的类别中生成一个随机单词列表，没有任何特定的 句 结构。单词将按照类别从上到下的顺序生成。</li>
           </ul>
         </div>
         <!-- Generated prompts section -->
@@ -98,8 +90,8 @@
         </div>
         <!-- Button Container -->
         <div id="buttonsContainer">
-          <a href="https://www.ko-fi.com/N4N5LOGJS" target="_blank" class="btn button kofi-btn"
-            title="Support me on Ko-fi">Support Me</a>
+          <a href="https://www.qpipi.com" target="_blank" class="btn button kofi-btn"
+            title="Support me on Ko-fi">Qpipi.com</a>
           <a href="https://github.com/SpriteSixis/Prompt-Generator-for-AI-Text-to-Image-Models" target="_blank"
             class="btn button github-btn" title="Read the User Manual on GitHub">User Guide</a>
           <button id="spellcheckToggleBtn" class="btn button spellchk-btn" title="Toggle Spellcheck ON/OFF. Shift + Alt + 7">Spell Check</button>
@@ -112,19 +104,17 @@
         </div>
         <div id="footer">
           <p>
-            Version 1.1.0.
-            This site was put together by <a href="https://github.com/SpriteSixis" target="_blank"
+            &copy; <a href="https://www.qpipi.com" target="_blank"
+              style="color: gray;">Qpipi.com</a>.
+            by <a href="https://github.com/SpriteSixis" target="_blank"
               style="color: gray;">Sprite6</a>.
-            Licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank"
-              style="color: gray;">GNU GPLv3</a>.
-            For any queries, suggestions, or issue reports, please feel free to reach out on GitHub.
           </p>
         </div>
 
         <script src="data.js"></script>
         <script src="scripts.js"></script>
         <!-- Place this tag in your head or just before your close body tag. -->
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script async defer src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/github-buttons/2.21.1/buttons.js"></script>
         
 
 </body>
